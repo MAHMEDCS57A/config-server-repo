@@ -1,4 +1,4 @@
-example.property: "I AM DEFAULT from GIThub"
+example.property: "I AM DEFAULT from GIThub change on running service test"
 spring.jpa.database: "POSTGRESQL"
 spring.datasource.platform:  "postgres"
 spring.jpa.show-sql: "true"
