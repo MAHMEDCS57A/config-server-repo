@@ -1,7 +1,8 @@
 property:
-  requests:
+  request:
     fields:
-      field1:
+      field:
+        number: "1",
         name: "stan",
         encoding: "bcd"
         source: "request.transactionNumber",
@@ -10,7 +11,8 @@ property:
         encryption: "none",
         formatting: "left zero padded",
         type: "int"
-      field2:
+      field:
+        number: "2"
         name: "sequenceNumbe",
         encoding: "bcd"
         source: "request.sequenceNumber",
