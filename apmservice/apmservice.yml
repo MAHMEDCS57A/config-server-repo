@@ -1,25 +1,25 @@
 request:
     fields:
         field1:
-            number: "1",
-            name: "stan",
-            encoding: "bcd"
-            source: "request.transactionNumber",
-            destination: "response.bit11"
-            size: "11",
-            encryption: "none",
-            formatting: "left zero padded",
-            type: "int"
+            number: 1
+            name: stan
+            encoding: bcd
+            source: transactionNumber
+            destination: responsebit11
+            size: 11
+            encryption: none
+            formatting: leftzeropadded
+            type: int
           field2:
-            number: "2"
-            name: "sequenceNumbe",
-            encoding: "bcd"
-            source: "request.sequenceNumber",
-            destination: "response.bit7"
-            size: "11",
-            encryption: "none",
-            formatting: "left zero padded",
-            type: "int"
+            number: 2
+            name: stan
+            encoding: bcd
+            source: transactionNumber
+            destination: responsebit11
+            size: 11
+            encryption: none
+            formatting: leftzeropadded
+            type: int
         
         
       
