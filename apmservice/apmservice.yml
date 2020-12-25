@@ -1,5 +1,4 @@
-property:
-  request:
+request:
     fields:
       field1:
         number: "1",
