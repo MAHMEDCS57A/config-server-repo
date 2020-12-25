@@ -1,6 +1,5 @@
 request:
-    fields:
-      field1:
+    field1:
         number: "1",
         name: "stan",
         encoding: "bcd"
