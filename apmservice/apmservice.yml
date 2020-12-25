@@ -1,7 +1,7 @@
 property:
   request:
     fields:
-      field:
+      field1:
         number: "1",
         name: "stan",
         encoding: "bcd"
@@ -11,7 +11,7 @@ property:
         encryption: "none",
         formatting: "left zero padded",
         type: "int"
-      field:
+      field2:
         number: "2"
         name: "sequenceNumbe",
         encoding: "bcd"
