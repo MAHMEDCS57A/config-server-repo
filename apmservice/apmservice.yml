@@ -1,7 +1,6 @@
 request:
     fields:
         field1:
-            number: 1
             name: stan
             encoding: bcd
             source: transactionNumber
@@ -11,7 +10,6 @@ request:
             formatting: leftzeropadded
             type: int
           field2:
-            number: 2
             name: stan
             encoding: bcd
             source: transactionNumber
