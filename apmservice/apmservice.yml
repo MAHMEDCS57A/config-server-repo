@@ -1,23 +1,23 @@
 request:
-    fields:
-        field1:
-            name: stan
-            encoding: bcd
-            source: transactionNumber
-            destination: responsebit11
-            size: 11
-            encryption: none
-            formatting: leftzeropadded
-            type: int
-          field2:
-            name: stan
-            encoding: bcd
-            source: transactionNumber
-            destination: responsebit11
-            size: 11
-            encryption: none
-            formatting: leftzeropadded
-            type: int
+  fields:
+    field1:
+      name: stan
+      encoding: bcd
+      source: transactionNumber
+      destination: responsebit11
+      size: 11
+      encryption: none
+      formatting: leftzeropadded
+      type: int
+    field2:
+      name: stan
+      encoding: bcd
+      source: transactionNumber
+      destination: responsebit11
+      size: 11
+      encryption: none
+      formatting: leftzeropadded
+      type: int
         
         
       
