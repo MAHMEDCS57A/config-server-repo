@@ -1,0 +1,34 @@
+example.property: "I AM DEFAULT from GIThub"
+spring.jpa.database: "POSTGRESQL"
+spring.datasource.platform:  "postgres"
+spring.jpa.show-sql: "true"
+spring.database.driverClassName: "org.postgresql.Driver"
+spring.datasource.url: "jdbc:postgresql://database:5432/transnet_local"
+spring.datasource.username: "postgres"
+spring.datasource.password: "{cipher}4788dfe1ccbe6485934aec2ffeddb06163ea3d616df5fd75be96aadd4df1da91"
+spring.datasource.testWhileIdle: "true"
+spring.datasource.validationQuery: "SELECT 1"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+redis.server: "redis"
+redis.port: "6379"
+signing.key: "345345fsdfsf5345"
+request:
+  fields:
+    field1:
+      name: stan
+      encoding: bcd
+      source: transactionNumber
+      destination: responsebit11
+      size: 11
+      encryption: none
+      formatting: leftzeropadded
+      type: int
+    field2:
+      name: stan
+      encoding: bcd
+      source: transactionNumber
+      destination: responsebit11
+      size: 11
+      encryption: none
+      formatting: leftzeropadded
+      type: int
