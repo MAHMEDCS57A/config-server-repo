@@ -1,0 +1,47 @@
+spring.jpa.database: "POSTGRESQL"
+spring.datasource.platform:  "postgres"
+spring.jpa.show-sql: "true"
+spring.database.driverClassName: "org.postgresql.Driver"
+spring.datasource.url: "jdbc:postgresql://database:5432/transnet_local"
+spring.datasource.username: "postgres"
+spring.datasource.password: "{cipher}4788dfe1ccbe6485934aec2ffeddb06163ea3d616df5fd75be96aadd4df1da91"
+spring.datasource.testWhileIdle: "true"
+spring.datasource.validationQuery: "SELECT 1"
+spring.jpa.properties.hibernate.dialect: "org.hibernate.dialect.PostgreSQLDialect"
+redis.server: "redis"
+redis.port: "6379"
+signing.key: "345345fsdfsf5345"
+message.format: "ISO8589-2011-2"
+request:
+  fields:
+    MessageType:
+      name: MessageType
+      encoding: na
+      value: 1100
+      source: constant
+      destination: na
+      size: 4
+      type: Numeric
+      formatting: na
+    BitMap:
+      name: BitMap
+      encoding: na
+      source: calculated
+      calc_class: "com.service.util.firstdataUtils"
+      calc_method_parms: "CalculateBitMap|bitno"
+      destination: bitmap
+      size: 64
+      encryption: na
+      formatting: na
+      type: bits
+    Bit2:
+      name: 'primary account number'
+      encoding: bcd
+      source: 'request.cardDetail.accountNumber'
+      calc_class: "com.service.util.firstdataUtils"
+      calc_method_parms: "CalculateBitMap|bitno"
+      destination: 2
+      size: 19
+      encryption: na
+      formatting: "NN|leftjustified|padded_0"
+      type: numeric
