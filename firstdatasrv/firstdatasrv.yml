@@ -35,9 +35,9 @@ request:
       formatting: na
       type: bits
     Bit2:
-      name: 'primary account number'
+      name: "primary account number"
       encoding: bcd
-      source: 'request.cardDetail.accountNumber'
+      source: "request.cardDetail.accountNumber"
       calc_class: "com.service.util.firstdataUtils"
       calc_method_parms: "CalculateBitMap|bitno"
       destination: 2
